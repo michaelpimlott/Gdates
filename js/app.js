@@ -15,7 +15,7 @@
       })
       .when('/members', {
         templateUrl: 'partials/members.html',
-        controller: 'membersController'
+        controller: 'MembersController'
       })
       .when('/profile', {
         templateUrl: 'partials/profile.html',
