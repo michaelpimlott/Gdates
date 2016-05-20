@@ -1,0 +1,64 @@
+.navbar-brand {
+  /*padding-top: 20px;*/
+  font-size: 38px;
+}
+#g{
+  color:#F8901F;
+  font-family:Georgia;
+
+}
+#e{
+  color:#184BC1;
+  font-family:Georgia;
+}
+
+#poo{
+  background-color: #686869;
+  height: 62px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  padding-top: 8px;
+}
+
+.options{
+  padding-top: 20px;
+  color:#2C92DF;
+  font-size: 20px;
+  font-family:Georgia;
+}
+
+#welcomediv {
+  height: 400px;
+  width:100%;
+  background-image: url('https://staticseekingalpha.a.ssl.fastly.net/uploads/2016/4/28/1115549-14618826935342941_origin.jpg');
+  color: white;
+  margin-top: 0px;
+  padding-top: 0px;
+  text-align: center;
+  font-size: 20px;
+  font-family: Georgia;
+}
+
+#welcome {
+  height:60px;
+  width: 200px;
+  font-size: 30px;
+  background-color:#57AD68;
+  color:white;
+  border: 1px solid #2C92DF;
+  font-family: Georgia;
+}
+
+#text {
+  padding-top: 100px;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+/*.home-bottom {
+height:400px;
+width:100%;
+background-color: #2D3635;
+}*/
