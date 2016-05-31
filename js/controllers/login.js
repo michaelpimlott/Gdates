@@ -1,26 +1,13 @@
-(function () {
+(function() {
   'use strict';
 
   angular
     .module('gDates')
-    .controller('loginCtrl', loginCtrl);
+    .controller('LoginCtrl', LoginCtrl)
 
-    loginCtrl.$inject = ['$rootScope', '$scope', '$location', 'authService'];
+  LoginCtrl.$inject = ['User', '$state'];
 
-    function loginCtrl($rootScope, $scope, $location, authService) {
-      $scope.user = {};
-      $scope.login = function() {
-        authService.login($scope.user);
-        .then(function(user) {
-          authService.setUserInfo(user);
-          $location.path('/');
-          $rootScope.currentUser = authService.getUserInfo();
-        })
-        .catch(function(err) {
-          console.log('error');
-        });
-      };
-
-    }
-
+  function LoginCtrl(User, $state) {
+    var vm = this;
+  }
 })();
