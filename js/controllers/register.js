@@ -3,7 +3,10 @@
 
   angular
     .module('gDates')
-    .controller('RegisterCtrl', RegisterCtrl)
+    .controller('RegisterController', RegisterController);
 
-  
+    function RegisterController(){
+      console.log('test');
+    }
+
 })();

@@ -3,16 +3,16 @@
 
   angular.module('gDates')
     .config(config)
-    .run(routeChange);
+    // .run(routeChange);
 
     config.$inject = ['$routeProvider', '$httpProvider'];
-    routeChange.$inject = ['$rootScope', '$location', '$window'];
+    // routeChange.$inject = ['$rootScope', '$location', '$window'];
 
 function config($routeProvider, $httpProvider) {
 $routeProvider
   .when('/', {
-    templateUrl: 'partials/home.html',
-    controller: 'HomeController'
+    templateUrl: 'partials/main.html',
+    controller: 'MainController'
   })
   .when('/members', {
     templateUrl: 'partials/members.html',
@@ -29,6 +29,10 @@ $routeProvider
   .when('/login', {
     templateUrl: 'partials/login.html',
     controller: 'LoginController'
+  })
+  .when('/register',{
+    templateUrl: 'partials/register.html',
+    controller: 'RegisterController'
   })
 };
 })();

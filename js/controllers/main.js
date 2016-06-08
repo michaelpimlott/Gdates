@@ -3,11 +3,11 @@
 
   angular
     .module('gDates')
-    .controller('MainCtrl', MainCtrl);
+    .controller('MainController', MainController);
 
-  MainCtrl.$inject = ['Members'];
 
-  function MainCtrl(Members) {
+
+  function MainController(Members) {
     var vm = this;
   }
 
