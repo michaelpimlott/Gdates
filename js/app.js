@@ -2,10 +2,10 @@
   'use strict';
 
   angular
-    .module('Gdates', [
+    .module('gDates', [
       'ngRoute'
     ]);
-    .config(config);
+    .config(config)
 
   function config($routeProvider) {
     $routeProvider
@@ -24,6 +24,10 @@
       .when('/search', {
         templateUrl: 'partials/search.html',
         controller: 'SearchController'
+      })
+      .when('/login', {
+        templateUrl: 'partials/login.html',
+        controller: 'LoginController'
       })
   };
 

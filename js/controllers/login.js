@@ -3,11 +3,13 @@
 
   angular
     .module('gDates')
-    .controller('LoginCtrl', LoginCtrl)
+    .controller('LoginController', LoginController)
 
-  LoginCtrl.$inject = ['User', '$state'];
+  LoginController.$inject = ['User', '$state'];
 
-  function LoginCtrl(User, $state) {
+  function LoginController`(User, $state) {
     var vm = this;
+    vm.name = 'michael';
+    console.log("Michael");
   }
 })();
