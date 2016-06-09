@@ -5,11 +5,10 @@
     .module('gDates')
     .controller('LoginController', LoginController)
 
-  LoginController.$inject = ['User', '$state'];
+  LoginController.$inject = ['$rootScope', '$scope', '$location'];
 
-  function LoginController(User, $state) {
-    var vm = this;
-    vm.name = 'michael';
-    console.log("Michael");
+  function LoginController($rootScope, $scope, $location) {
+    $scope.user = {};
+    
   }
 })();
