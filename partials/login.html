@@ -1,25 +1,20 @@
-<body ng-controller="MainContoller">
-    <div class="container-fluid">
-        <div class="row">
-            <nav id="poo" class="navbar navbar-default">
-                <div class="container-fluid">
-
-                    <div id="logo" class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#"><span id="g">G</Span><span id="e">EEK DATES</span></a>
-                    </div>
-                    <div class="collapse navbar-collapse">
-                        <ul id="options" class="nav navbar-nav navbar-right">
-                            <li><a href="#"><span class="options">Login</span></a></li>
-                            <li><a href="#"><span class="options">Register</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+<div>
+  <h1>Login</h1>
+</div>
+  <div>
+    <form class= "form" ng-submit="login()">
+      <div class="form-group">
+        <label>Email</label>
+        <input ng-model="user.email" class="form-control" type="email" required>
       </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input ng-model="user.password" class="form-controll" type="password" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+  <div>
+    <a href='#'>Don't have an account?</a>
+  </div>
+{{ vm.name }}
+</div>

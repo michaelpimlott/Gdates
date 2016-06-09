@@ -3,13 +3,26 @@
 
   angular
     .module('gDates')
-    .controller('MainCtrl', MainCtrl);
+    .controller('MainController', MainController);
 
-  MainCtrl.$inject = ['Members'];
+  MainController.$inject = ['$rootScope', '$scope', '$location', 'memberService'];
 
-  function MainCtrl(Members) {
-    var vm = this;
-  }
+
+
+  function MainController($rootScope, $scope, $location, memberService) {
+    $scope.user = {};
+    memberService.getMembers()
+    .then(function(user) {
+      $scope.members = user.data.data
+
+    })
+    .catch(function(err) {
+      console.log(err);
+    });
+
+  };
+
+
 
 
 })();
