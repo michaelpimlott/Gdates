@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body ng-controller="MainContoller">
+<body ng-controller="MainController">
     <div class="container-fluid">
         <div class="row">
             <nav id="poo" class="navbar navbar-default">
@@ -50,12 +50,12 @@
         <div class="home-bottom">
         </div>
     </div>
-
+      <ng-view></ng-view>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.js"></script>
     <script src="js/app.js" type="text/javascript"></script>
     <script src="js/controllers/main.js" type="text/javascript"></script>
