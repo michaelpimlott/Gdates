@@ -9,7 +9,7 @@
 
   function LoginController($rootScope, $scope, $location) {
     $scope.user = {};
-
+    
 
   }
 })();

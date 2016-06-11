@@ -14,6 +14,7 @@
     memberService.getMembers()
     .then(function(user) {
       $scope.members = user.data.data
+      
 
     })
     .catch(function(err) {
